@@ -26,6 +26,7 @@ public class ClienteResource {
 	
 	@GetMapping
 	public ResponseEntity<List<Cliente>> findAll() {
+		
 		List<Cliente> list = service.findAll();
 		
 		return ResponseEntity.ok().body(list);
